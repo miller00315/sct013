@@ -5,7 +5,6 @@
  *
  * <HR>
  *
- * Copyright (C) Sierra Wireless, Inc. Use of this work is subject to license.
  */
 #include <math.h>
 #include "legato.h"
@@ -14,7 +13,7 @@
 
 //--------------------------------------------------------------------------------------------------
 /**
- * The time between publishing ADC location readings
+ * The time between publishing ADC lectures
  *
  * @note Please change this timeout value as needed.
  */

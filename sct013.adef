@@ -1,0 +1,28 @@
+sandboxed: true
+version: 1.0.0
+maxFileSystemBytes: 512K
+start: manual
+
+
+executables:
+{
+    sct013 = ( sct013Component )
+}
+
+processes:
+{
+    envVars:
+    {
+        LE_LOG_LEVEL = DEBUG
+    }
+    run:
+    {
+        ( sct013 )
+    }
+    faultAction: restart
+}
+
+bindings:
+{
+    sct013.sct013Component.le_adc -> modemService.le_adc
+}
